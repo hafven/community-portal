@@ -7,6 +7,21 @@
   "repository": "hafven/community-portal",
   "license": "UNLICENSED",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "serve": "webpack-serve"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta.3",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.2",
+    "webpack-serve": "^1.0.2"
   }
 }
