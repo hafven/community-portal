@@ -1,0 +1,12 @@
+{
+  "name": "community-portal",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/hafven/community-portal",
+  "author": "",
+  "repository": "hafven/community-portal",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
