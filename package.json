@@ -3,25 +3,39 @@
   "version": "0.0.0",
   "description": "",
   "homepage": "https://github.com/hafven/community-portal",
-  "author": "",
   "repository": "hafven/community-portal",
   "license": "UNLICENSED",
   "scripts": {
+    "analyz":
+      "npm run build -- --profile --json > stats.json && webpack-bundle-analyzer stats.json",
+    "prebuild": "rm -rf dist/",
     "build": "webpack --mode production",
     "serve": "webpack-serve"
   },
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-emotion": "^9.1.3",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
     "@babel/preset-react": "^7.0.0-beta.49",
     "babel-loader": "^8.0.0-beta.3",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-plugin-emotion": "^9.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "connect-history-api-fallback": "^1.5.0",
+    "emotion": "^9.1.3",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
+    "koa-connect": "^2.0.1",
+    "react-loadable": "^5.4.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.10.2",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^2.1.5",
     "webpack-serve": "^1.0.2"
   }
 }

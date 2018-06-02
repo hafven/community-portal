@@ -3,3 +3,6 @@ node_modules/
 
 # build artifacts
 dist/
+
+# webpack build profile stats
+stats.json
